@@ -1,0 +1,86 @@
+body {
+  background-color: #ffff;
+}
+
+/* Background-color nav list */
+
+#btn-grey {
+  background-color: #ffff;
+}
+
+#btn-red {
+  background-color: red;
+}
+
+#btn-orange {
+  background-color: orange;
+}
+#btn-purple {
+  background-color: purple;
+}
+#btn-green {
+  background-color: green;
+}
+
+.nav-main {
+  position: fixed;
+  margin-left: 5px;
+  margin-bottom: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.btn-toggle-nav {
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  cursor: pointer;
+}
+
+img {
+  background-color: inherit;
+}
+/* width: 60px; */
+/* height: 100%; */
+.nav-sidebar {
+  position: fixed;
+  margin-top: 0;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  height: calc(100vh - 60px);
+  padding: 0 5px;
+  z-index: 1000;
+  transition: all 0.4s ease-in-out; /*mooie eas-in-out ;)? */
+  visibility: hidden;
+}
+
+.nav-sidebar ul {
+  padding-top: 15px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.nav-sidebar ul li {
+  line-height: 60px;
+  list-style: none;
+}
+
+.nav-sidebar ul li a {
+  display: block;
+  height: 60px;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f1f1f1f1;
+  font-family: Arial;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  border: 0.2px solid #f1f1f1;
+  border-radius: 5px;
+}
